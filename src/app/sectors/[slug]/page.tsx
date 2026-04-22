@@ -123,7 +123,7 @@ export default function SectorPage({ params }: { params: { slug: string } }) {
           fill
           className="object-cover"
           priority
-          quality={100}
+          unoptimized
         />
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 container px-4">

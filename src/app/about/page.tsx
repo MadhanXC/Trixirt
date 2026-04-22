@@ -16,7 +16,7 @@ export default function AboutPage() {
           fill 
           className="object-cover" 
           priority 
-          quality={100}
+          unoptimized
         />
         <div className="absolute inset-0 bg-black/30" />
         <div className="container relative z-10 px-4 text-center">
