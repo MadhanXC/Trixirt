@@ -37,8 +37,8 @@ export default function Home() {
 
   return (
     <div className="flex flex-col w-full bg-background">
-      {/* Hero Section - Adjusted Mobile Height & Centering */}
-      <section className="relative h-[90vh] md:h-screen flex items-center overflow-hidden">
+      {/* Hero Section - Height 90vh, content pushed slightly down from the absolute top on mobile */}
+      <section className="relative h-[90vh] md:h-screen flex items-start md:items-center overflow-hidden">
         <Image
           src={heroImg}
           alt="TRIXIRT Industrial Excellence"
@@ -49,7 +49,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/60" />
         
-        <div className="container relative z-10 mx-auto px-4 text-white">
+        <div className="container relative z-10 mx-auto px-4 text-white pt-40 md:pt-0">
           <div className="max-w-4xl space-y-6">
             <h1 className="text-4xl md:text-6xl font-headline font-bold">
               Driving <span className="text-secondary">Precision</span>,<br />
@@ -133,7 +133,7 @@ export default function Home() {
           </p>
           <div className="pt-4">
             <Link href="/contact">
-              <Button size="lg" className="bg-secondary text-primary hover:bg-white hover:text-primary h-14 px-12 rounded-xl hover:scale-105 transition-all shadow-xl font-bold group border-none">
+              <Button size="lg" className="bg-secondary text-primary hover:bg-primary hover:text-white h-14 px-12 rounded-xl hover:scale-105 transition-all shadow-xl font-bold group border-none">
                 Initiate Inquiry
                 <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-2 transition-transform" />
               </Button>
