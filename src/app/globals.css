@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 10% 8%; /* Dark Industrial Grey */
+    --foreground: 210 40% 98%;
+    --card: 210 10% 12%;
+    --card-foreground: 210 40% 98%;
+    --popover: 210 10% 10%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 218 58% 33%; /* #244786 - Deep Blue */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 191 82% 57%; /* #38CBEC - Aqua Green */
+    --secondary-foreground: 210 10% 10%;
+    --muted: 210 10% 15%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 191 82% 57%;
+    --accent-foreground: 210 10% 10%;
+    --border: 210 10% 18%;
+    --input: 210 10% 18%;
+    --ring: 218 58% 33%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  
+  /* Strict 3-Size Typography Hierarchy (Avoiding Circular Dependency) */
+  h1 { 
+    font-size: 2.25rem; 
+    line-height: 2.5rem; 
+    @apply font-headline font-bold; 
+  }
+  h2, h3 { 
+    font-size: 1.25rem; 
+    line-height: 1.75rem; 
+    @apply font-headline font-bold; 
+  }
+  p { 
+    font-size: 1rem; 
+    line-height: 1.5rem; 
+    @apply leading-relaxed; 
+  }
+}
+
+.glass-header {
+  @apply bg-background/60 backdrop-blur-xl border-b border-white/10;
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+}
