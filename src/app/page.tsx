@@ -37,8 +37,8 @@ export default function Home() {
 
   return (
     <div className="flex flex-col w-full bg-background">
-      {/* Hero Section - Adjusted Mobile Height */}
-      <section className="relative h-[85vh] md:h-screen flex items-start pt-32 md:items-center md:pt-0 overflow-hidden">
+      {/* Hero Section - Adjusted Mobile Height & Centering */}
+      <section className="relative h-[90vh] md:h-screen flex items-center overflow-hidden">
         <Image
           src={heroImg}
           alt="TRIXIRT Industrial Excellence"
