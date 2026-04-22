@@ -37,8 +37,8 @@ export default function Home() {
 
   return (
     <div className="flex flex-col w-full bg-background">
-      {/* Hero Section - Full Page View */}
-      <section className="relative h-screen flex items-start pt-32 md:items-center md:pt-0 overflow-hidden">
+      {/* Hero Section - Adjusted Mobile Height */}
+      <section className="relative h-[85vh] md:h-screen flex items-start pt-32 md:items-center md:pt-0 overflow-hidden">
         <Image
           src={heroImg}
           alt="TRIXIRT Industrial Excellence"
@@ -133,7 +133,7 @@ export default function Home() {
           </p>
           <div className="pt-4">
             <Link href="/contact">
-              <Button size="lg" className="bg-secondary text-primary hover:bg-white text-primary hover:text-white h-14 px-12 rounded-xl hover:scale-105 transition-all shadow-xl font-bold group border-none">
+              <Button size="lg" className="bg-secondary text-primary hover:bg-white hover:text-primary h-14 px-12 rounded-xl hover:scale-105 transition-all shadow-xl font-bold group border-none">
                 Initiate Inquiry
                 <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-2 transition-transform" />
               </Button>
